@@ -1,0 +1,59 @@
+.uploader {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    // margin: 1rem;
+    margin: 0;
+
+    .selector-items {
+        min-width: 30%;
+        margin: 1rem;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #upload {
+            margin: 1rem;
+            padding: 1rem;
+        }
+
+        .inputfile {
+            width: 0.1px;
+            height: 0.1px;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            z-index: -1;
+        }
+
+        label {
+            font-size: 1.25rem;
+            font-weight: 700;
+            padding: 1rem;
+            color: white;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img,
+            h5 {
+                margin: 0.2rem;
+            }
+
+            &:hover {
+                background-color: #dddddd;
+                color: black;
+                outline: 0.1rem dotted #000;
+                outline: -webkit-focus-ring-color auto 0.5rem;
+                cursor: pointer; /* "hand" cursor */
+            }
+
+            img {
+                width: 3rem;
+                height: 2rem;
+            }
+        }
+    }
+}
